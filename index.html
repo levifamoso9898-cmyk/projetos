@@ -1,0 +1,727 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Casa Pronta 200 — 200 Projetos de Casas Prontos</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;600;700;800&display=swap" rel="stylesheet">
+
+<link rel="preload" as="image" href="https://i.ibb.co/PZt70b6L/png-logo-site.png">
+
+<script>
+  window.pixelId = "69c16644d336123f655da17c";
+  var a = document.createElement("script");
+  a.setAttribute("async", "");
+  a.setAttribute("defer", "");
+  a.setAttribute("src", "https://cdn.utmify.com.br/scripts/pixel/pixel.js");
+  document.head.appendChild(a);
+</script>
+
+<!-- UTMify UTMs -->
+<script
+  src="https://cdn.utmify.com.br/scripts/utms/latest.js"
+  data-utmify-prevent-xcod-sck
+  data-utmify-prevent-subids
+  async
+  defer
+></script>
+
+<!-- Microsoft Clarity -->
+<script type="text/javascript">
+  (function(c,l,a,r,i,t,y){
+    c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
+    t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
+    y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
+  })(window, document, "clarity", "script", "vzwpqbjweh");
+</script>
+<style>
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+:root{
+  --laranja:#ff6a00;
+  --laranja2:#ff9500;
+  --lgrad:linear-gradient(135deg,#ff6a00,#ff9500);
+  --preto:#0a0a0a;
+  --cinza:#f5f5f5;
+  --cinza2:#e8e8e8;
+  --texto:#111;
+  --sub:#555;
+  --r:12px;
+  --sh:0 4px 24px rgba(0,0,0,.10);
+  --sh-lg:0 12px 48px rgba(0,0,0,.18);
+}
+html{scroll-behavior:smooth;font-size:16px}
+body{font-family:'Plus Jakarta Sans',sans-serif;color:var(--texto);background:#fff;overflow-x:hidden}
+a{text-decoration:none;color:inherit}
+
+/* ANIMAÇÕES */
+@keyframes pisca   {0%,100%{opacity:1}50%{opacity:.6}}
+@keyframes flutuaY {0%,100%{transform:translateY(0)}50%{transform:translateY(-9px)}}
+@keyframes shimmer {0%{background-position:-200% center}100%{background-position:200% center}}
+@keyframes pulsoBtn{0%,100%{box-shadow:0 0 0 0 rgba(255,106,0,.5)}70%{box-shadow:0 0 0 16px rgba(255,106,0,0)}}
+@keyframes entrar  {from{opacity:0;transform:translateY(32px)}to{opacity:1;transform:none}}
+@keyframes escala  {from{opacity:0;transform:scale(.9)}to{opacity:1;transform:scale(1)}}
+@keyframes strip   {0%{transform:translateX(0)}100%{transform:translateX(-50%)}}
+
+/* ALERTA */
+.alerta{
+  background:linear-gradient(90deg,#b03d00,var(--laranja),#b03d00);
+  background-size:200%;
+  animation:shimmer 3s linear infinite,pisca 2s ease infinite;
+  color:#fff;text-align:center;padding:11px 16px;
+  font-weight:800;font-size:.88rem;letter-spacing:.04em;
+  position:sticky;top:0;z-index:999;
+}
+
+/* HERO */
+.hero{
+  background:var(--preto);padding:48px 20px 72px;text-align:center;
+  position:relative;overflow:hidden;display:flex;align-items:center;
+}
+.hero-bg::before{content:'';position:absolute;width:520px;height:520px;background:radial-gradient(circle,rgba(255,106,0,.28) 0%,transparent 68%);top:-90px;right:-90px;border-radius:50%;animation:flutuaY 6s ease infinite;pointer-events:none}
+.hero-bg::after{content:'';position:absolute;width:340px;height:340px;background:radial-gradient(circle,rgba(255,149,0,.15) 0%,transparent 68%);bottom:-60px;left:-60px;border-radius:50%;animation:flutuaY 8s ease infinite reverse;pointer-events:none}
+.hero-dots{position:absolute;inset:0;pointer-events:none;background-image:radial-gradient(rgba(255,255,255,.06) 1px,transparent 1px);background-size:28px 28px}
+.hero-in{position:relative;z-index:2;width:100%;max-width:800px;margin:0 auto}
+.hero-logo{height:130px;width:auto;object-fit:contain;margin:0 auto 24px;display:block;mix-blend-mode:lighten;animation:entrar .7s ease both}
+.hero-pill{display:inline-flex;align-items:center;gap:8px;background:rgba(255,255,255,.1);border:1px solid rgba(255,255,255,.18);color:#fff;font-weight:700;font-size:.78rem;letter-spacing:.08em;text-transform:uppercase;padding:6px 16px;border-radius:30px;margin-bottom:20px;backdrop-filter:blur(6px);animation:entrar .8s .1s ease both}
+.hero-pill em{font-style:normal;background:var(--laranja);padding:2px 9px;border-radius:10px;font-size:.7rem}
+.hero h1{font-size:clamp(2rem,5.5vw,3.6rem);font-weight:800;line-height:1.08;color:#fff;margin-bottom:16px;animation:entrar .9s .2s ease both}
+.hero h1 span{color:var(--laranja2)}
+.hero-sub{font-size:clamp(.96rem,2vw,1.15rem);color:rgba(255,255,255,.72);max-width:560px;margin:0 auto 36px;line-height:1.7;animation:entrar .9s .3s ease both}
+.hero-sub b{color:#fff}
+.video-wrap{max-width:360px;margin:0 auto 38px;animation:escala .9s .35s ease both;position:relative;border-radius:14px;overflow:hidden;box-shadow:0 20px 60px rgba(0,0,0,.5)}
+.hero-cta{animation:entrar .9s .44s ease both}
+.lock{display:block;margin:11px auto 0;font-size:.75rem;color:rgba(255,255,255,.38);letter-spacing:.04em}
+
+/* BOTÕES */
+.btn{display:inline-block;font-family:inherit;font-weight:800;border:none;cursor:pointer;border-radius:var(--r);text-align:center;line-height:1.3;transition:transform .18s,filter .18s;position:relative;overflow:hidden}
+.btn::after{content:'';position:absolute;top:-50%;left:-60%;width:40%;height:200%;background:rgba(255,255,255,.18);transform:skewX(-20deg);transition:left .4s ease}
+.btn:hover::after{left:130%}
+.btn:hover{transform:translateY(-3px);text-decoration:none}
+.btn-am{background:var(--lgrad);color:#fff;padding:19px 52px;font-size:1.15rem;box-shadow:0 6px 28px rgba(255,106,0,.45);animation:pulsoBtn 2.5s .4s ease infinite}
+.btn-la{background:var(--lgrad);color:#fff;padding:17px 44px;font-size:1.05rem;box-shadow:0 6px 26px rgba(255,106,0,.4);animation:pulsoBtn 2.5s ease infinite}
+.btn-gz{background:var(--cinza);color:var(--texto);padding:15px 36px;font-size:.96rem;border:2px solid var(--cinza2)}
+.btn-w{width:100%;padding:17px 20px;display:block;text-align:center}
+
+/* LAYOUT */
+.sec{padding:60px 20px}
+.w{max-width:920px;margin:0 auto}
+.tc{text-align:center}
+.tag{display:inline-block;background:#fff3ec;color:var(--laranja);font-weight:800;font-size:.74rem;text-transform:uppercase;letter-spacing:.12em;padding:5px 14px;border-radius:20px;margin-bottom:14px;border:1px solid rgba(255,94,0,.14)}
+h2.t{font-size:clamp(1.8rem,4.2vw,2.6rem);font-weight:800;line-height:1.15;color:var(--texto);margin-bottom:10px}
+h2.t span{color:var(--laranja)}
+.sub{font-size:1rem;color:var(--sub);line-height:1.65;margin-bottom:40px}
+
+/* STRIP */
+.strip{background:var(--lgrad);overflow:hidden;padding:13px 0}
+.strip-in{display:inline-flex;gap:50px;animation:strip 18s linear infinite;white-space:nowrap}
+.s-item{font-weight:800;font-size:.82rem;letter-spacing:.06em;text-transform:uppercase;color:#fff;display:flex;align-items:center;gap:8px;white-space:nowrap}
+.s-item::after{content:'★';opacity:.45;font-size:.65rem}
+
+/* ABAS */
+.sec-abas{background:var(--cinza)}
+.tab-nav{display:flex;gap:8px;margin-bottom:36px;background:#fff;padding:6px;border-radius:16px;box-shadow:var(--sh);flex-wrap:wrap}
+.tab-btn{flex:1;min-width:140px;padding:13px 16px;border:none;cursor:pointer;border-radius:11px;font-family:inherit;font-weight:700;font-size:.88rem;color:var(--sub);background:transparent;transition:background .22s,color .22s;white-space:nowrap}
+.tab-btn.ativo{background:var(--lgrad);color:#fff;box-shadow:0 4px 16px rgba(255,94,0,.3)}
+.tab-btn:hover:not(.ativo){background:var(--cinza);color:var(--texto)}
+.tab-pane{display:none}
+.tab-pane.ativo{display:block;animation:entrar .4s ease both}
+.r-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(175px,1fr));gap:14px}
+.rc{background:#fff;border-radius:14px;padding:22px 18px;box-shadow:var(--sh);border:1.5px solid var(--cinza2);display:flex;flex-direction:column;gap:10px;transition:box-shadow .25s,transform .25s,border-color .25s}
+.rc:hover{box-shadow:0 12px 40px rgba(255,94,0,.16);transform:translateY(-4px);border-color:rgba(255,94,0,.28)}
+.rc-ico{font-size:1.9rem;line-height:1}
+.rc h3{font-size:.94rem;font-weight:800;color:var(--texto)}
+.rc p{font-size:.83rem;color:var(--sub);line-height:1.5}
+.vale-lista{display:flex;flex-direction:column;gap:12px;max-width:780px;margin:0 auto}
+.vale-item{background:#fff;border-radius:12px;padding:18px 22px;box-shadow:var(--sh);border:1.5px solid var(--cinza2);display:flex;align-items:center;justify-content:space-between;gap:16px;transition:border-color .2s}
+.vale-item:hover{border-color:rgba(255,94,0,.25)}
+.vale-left{display:flex;align-items:flex-start;gap:14px;flex:1}
+.vale-ico{font-size:1.7rem;flex-shrink:0;margin-top:2px}
+.vale-left strong{display:block;font-weight:800;font-size:.96rem;color:var(--texto);margin-bottom:3px}
+.vale-left p{font-size:.83rem;color:var(--sub);line-height:1.4}
+.vale-preco{text-align:right;flex-shrink:0}
+.preco-real{display:block;font-size:1.2rem;font-weight:800;color:var(--sub);text-decoration:line-through;opacity:.5}
+.preco-label{font-size:.72rem;color:#bbb;font-weight:600}
+.vale-total{background:linear-gradient(135deg,var(--preto),#1a1a1a);border-radius:12px;padding:20px 24px;display:flex;align-items:center;justify-content:space-between;gap:16px;flex-wrap:wrap}
+.vale-total-left{color:rgba(255,255,255,.8);font-weight:700;font-size:.9rem;flex:1}
+.vale-total-right{text-align:right;flex-shrink:0}
+.total-de{display:block;font-size:1rem;color:rgba(255,255,255,.45);text-decoration:line-through}
+.total-por{display:block;font-size:1.1rem;color:#fff;font-weight:800}
+.total-por b{color:var(--laranja2);font-size:1.5rem}
+.precisa-grid{display:grid;grid-template-columns:1fr 1fr;gap:20px;max-width:740px;margin:0 auto 32px}
+@media(max-width:580px){.precisa-grid{grid-template-columns:1fr}}
+.prob-card,.sol-card{border-radius:14px;padding:26px 22px;box-shadow:var(--sh)}
+.prob-card{background:#fff;border:2px solid #fde8e8}
+.sol-card{background:linear-gradient(160deg,#f0fff4,#e8fdf0);border:2px solid #c6f6d5}
+.prob-ico{font-size:2rem;display:block;margin-bottom:10px}
+.prob-card h3,.sol-card h3{font-size:1rem;font-weight:800;color:var(--texto);margin-bottom:14px}
+.prob-lista{list-style:none;display:flex;flex-direction:column;gap:9px}
+.prob-lista li{font-size:.87rem;color:var(--sub);line-height:1.4}
+.precisa-cta{margin-top:8px}
+
+/* CARROSSEL */
+.carr-wrap{position:relative;max-width:940px;margin:0 auto}
+.carr-outer{overflow:hidden;border-radius:16px}
+.carr-track{display:flex;transition:transform .45s cubic-bezier(.4,0,.2,1);will-change:transform}
+.carr-slide{min-width:33.333%;padding:0 8px;flex-shrink:0;position:relative}
+@media(max-width:700px){.carr-slide{min-width:70%}}
+@media(max-width:480px){.carr-slide{min-width:90%}}
+.carr-slide .simg{width:100%;height:220px;object-fit:cover;object-position:center;border-radius:12px;display:block;box-shadow:var(--sh-lg);transition:transform .3s;background:#1a1a1a}
+.carr-slide .simg:hover{transform:scale(1.02)}
+.carr-label{position:absolute;bottom:12px;left:16px;right:16px;background:rgba(0,0,0,.75);color:#fff;font-weight:700;font-size:.8rem;padding:6px 12px;border-radius:8px;text-align:center}
+.carr-btn{position:absolute;top:50%;transform:translateY(-60%);width:44px;height:44px;border-radius:50%;border:none;cursor:pointer;background:var(--laranja);color:#fff;font-size:1.1rem;font-weight:900;display:flex;align-items:center;justify-content:center;box-shadow:0 4px 16px rgba(255,106,0,.4);z-index:10;transition:background .2s,transform .2s}
+.carr-btn:hover{background:#d44900;transform:translateY(-60%) scale(1.1)}
+.carr-prev{left:-20px}.carr-next{right:-20px}
+@media(max-width:600px){.carr-prev{left:4px}.carr-next{right:4px}}
+.carr-dots{display:flex;justify-content:center;gap:8px;margin-top:16px}
+.carr-dot{width:8px;height:8px;border-radius:50%;background:var(--cinza2);border:none;cursor:pointer;transition:background .2s,transform .2s;padding:0}
+.carr-dot.on{background:var(--laranja);transform:scale(1.4)}
+
+/* PLANOS */
+.sec-planos{background:#fff}
+.planos{display:grid;grid-template-columns:1fr 1fr;gap:24px;max-width:780px;margin:0 auto;align-items:start}
+@media(max-width:600px){.planos{grid-template-columns:1fr}}
+.plano{border-radius:18px;overflow:hidden;box-shadow:var(--sh-lg);border:2px solid var(--cinza2);background:#fff;transition:transform .25s}
+.plano:hover{transform:translateY(-4px)}
+.plano.dest{border-color:var(--laranja);box-shadow:0 14px 50px rgba(255,106,0,.22)}
+.p-top{background:var(--lgrad);color:#fff;text-align:center;font-weight:800;font-size:.78rem;letter-spacing:.1em;text-transform:uppercase;padding:8px}
+.p-head{padding:26px 22px 20px;text-align:center;border-bottom:2px solid var(--cinza2)}
+.plano.dest .p-head{background:linear-gradient(160deg,#fff8f4,#fff3ec)}
+.p-nome{font-weight:800;font-size:.9rem;text-transform:uppercase;letter-spacing:.08em;color:var(--sub);margin-bottom:12px}
+.p-de{font-size:.86rem;color:#bbb;text-decoration:line-through;margin-bottom:3px}
+.p-preco{font-size:3rem;font-weight:800;line-height:1;margin-bottom:4px}
+.plano.bas .p-preco{color:#111}
+.plano.dest .p-preco{color:var(--laranja)}
+.p-parc{font-size:.78rem;color:var(--sub)}
+.p-itens{list-style:none;padding:18px 22px;display:flex;flex-direction:column;gap:10px}
+.p-itens li{display:flex;align-items:flex-start;gap:9px;font-size:.88rem;color:var(--texto);line-height:1.4}
+.p-itens li.bon{color:var(--sub);font-size:.82rem}
+.p-lbl{font-weight:800;font-size:.82rem;color:var(--laranja);letter-spacing:.04em;padding-bottom:4px}
+.li-row{display:flex;justify-content:space-between;align-items:flex-start;gap:8px;width:100%}
+.li-row small{font-size:.76rem;color:var(--sub);display:block;margin-top:1px}
+.li-preco{font-weight:800;font-size:.8rem;color:var(--sub);opacity:.4;white-space:nowrap;flex-shrink:0;text-decoration:line-through;padding-top:1px}
+.bon-p{color:var(--laranja);opacity:.5}
+.p-total{display:flex;justify-content:space-between;align-items:center;font-size:.88rem;color:var(--sub);font-weight:600}
+.p-hoje{display:flex;justify-content:space-between;align-items:center;font-size:.95rem;font-weight:800;color:var(--texto);background:linear-gradient(135deg,#fff8f4,#fff3ec);margin:4px -22px 0;padding:10px 22px}
+.p-hoje-val{font-size:1.3rem;font-weight:800;color:var(--laranja)}
+.p-div{height:1px;background:var(--cinza2)}
+.p-foot{padding:14px 22px 22px;display:flex;flex-direction:column;gap:8px}
+.p-seg{text-align:center;font-size:.7rem;color:#bbb;display:flex;align-items:center;justify-content:center;gap:5px}
+
+/* BÔNUS */
+.sec-bv{background:var(--cinza)}
+.bv-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(270px,1fr));gap:22px;margin-bottom:40px}
+.bv-card{background:#fff;border-radius:18px;overflow:hidden;box-shadow:var(--sh-lg);border:1.5px solid var(--cinza2);transition:transform .25s,box-shadow .25s,border-color .25s;display:flex;flex-direction:column}
+.bv-card:hover{transform:translateY(-5px);box-shadow:0 20px 56px rgba(255,106,0,.18);border-color:rgba(255,106,0,.3)}
+.bv-img{width:100%;height:200px;object-fit:cover;object-position:center;display:block;transition:transform .35s}
+.bv-card:hover .bv-img{transform:scale(1.04)}
+.bv-body{padding:22px 22px 26px;display:flex;flex-direction:column;gap:10px;flex:1}
+.bv-tag{display:inline-block;background:var(--lgrad);color:#fff;font-weight:800;font-size:.72rem;text-transform:uppercase;letter-spacing:.1em;padding:4px 12px;border-radius:20px;width:fit-content}
+.bv-body h3{font-size:1.05rem;font-weight:800;color:var(--texto);line-height:1.35}
+.bv-body p{font-size:.88rem;color:var(--sub);line-height:1.6;flex:1}
+.bv-mais{background:var(--preto);border-radius:16px;padding:28px 32px;display:flex;align-items:center;justify-content:space-between;gap:20px;flex-wrap:wrap;border:1.5px solid rgba(255,106,0,.2)}
+.bv-mais span{font-size:2.2rem;flex-shrink:0}
+.bv-mais p{font-weight:800;font-size:1.1rem;color:#fff;flex:1;line-height:1.3}
+@media(max-width:560px){.bv-mais{flex-direction:column;text-align:center}}
+
+/* DEPOIMENTOS */
+.sec-dep{background:var(--preto)}
+.dep-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:18px}
+.dep-card{background:#141414;border:1.5px solid rgba(255,255,255,.07);border-radius:16px;padding:26px 24px;display:flex;flex-direction:column;gap:16px;transition:border-color .25s,transform .25s,box-shadow .25s;position:relative;overflow:hidden}
+.dep-card::before{content:'';position:absolute;top:0;left:0;right:0;height:3px;background:var(--lgrad);transform:scaleX(0);transform-origin:left;transition:transform .3s}
+.dep-card:hover{border-color:rgba(255,106,0,.3);transform:translateY(-4px);box-shadow:0 16px 48px rgba(255,106,0,.12)}
+.dep-card:hover::before{transform:scaleX(1)}
+.dep-stars{font-size:1.1rem;color:var(--laranja);letter-spacing:2px;line-height:1}
+.dep-texto{font-size:.93rem;color:rgba(255,255,255,.75);line-height:1.7;font-style:italic;flex:1}
+.dep-autor{display:flex;align-items:center;gap:12px;border-top:1px solid rgba(255,255,255,.07);padding-top:16px}
+.dep-av{width:48px;height:48px;border-radius:50%;flex-shrink:0;object-fit:cover;object-position:center top;border:2px solid var(--laranja);box-shadow:0 4px 12px rgba(255,106,0,.35)}
+.dep-autor strong{display:block;font-size:.92rem;font-weight:800;color:#fff}
+.dep-autor span{font-size:.78rem;color:rgba(255,255,255,.4)}
+
+/* GARANTIA */
+.sec-gar{background:var(--preto);padding:56px 20px;text-align:center}
+.gar-box{background:#fff;border-radius:18px;padding:40px 32px;max-width:500px;margin:0 auto;box-shadow:0 20px 64px rgba(0,0,0,.32)}
+.gar-ico{display:block;margin-bottom:14px;animation:flutuaY 3s ease infinite}
+.gar-img{width:140px;height:auto;display:block;margin:0 auto}
+.gar-titulo{font-size:1.5rem;font-weight:800;color:var(--texto);margin-bottom:10px}
+.gar-txt{font-size:.94rem;color:var(--sub);line-height:1.75}
+.gar-txt b{color:var(--laranja)}
+
+/* ESCASSEZ */
+.esc{background:var(--laranja2);padding:15px 20px;text-align:center}
+.esc p{font-weight:800;font-size:clamp(.88rem,2.5vw,1.05rem);color:#000}
+
+/* FAQ */
+.sec-faq{background:var(--cinza)}
+.faq-lista{display:flex;flex-direction:column;gap:10px;max-width:640px;margin:0 auto}
+.fi{border-radius:11px;overflow:hidden;border:1.5px solid var(--cinza2);background:#fff;transition:border-color .2s}
+.fi:hover{border-color:rgba(255,94,0,.28)}
+.fq{padding:17px 20px;cursor:pointer;font-weight:800;font-size:.94rem;color:var(--texto);display:flex;justify-content:space-between;align-items:center;gap:10px;user-select:none}
+.fq .s{width:27px;height:27px;background:#fff3ec;color:var(--laranja);border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:1.2rem;font-weight:900;flex-shrink:0;transition:transform .22s,background .2s}
+.fq.on .s{transform:rotate(45deg);background:var(--laranja);color:#fff}
+.fa{display:none;padding:0 20px 16px;font-size:.9rem;color:var(--sub);line-height:1.7}
+.fa.v{display:block}
+
+/* CTA FINAL */
+.sec-fin{background:var(--preto);padding:72px 20px;text-align:center;position:relative;overflow:hidden}
+.sec-fin::before{content:'';position:absolute;width:580px;height:580px;background:radial-gradient(circle,rgba(255,106,0,.2) 0%,transparent 65%);top:-180px;left:50%;transform:translateX(-50%);border-radius:50%;pointer-events:none}
+.fin-t{font-size:clamp(1.9rem,5vw,3rem);font-weight:800;color:#fff;line-height:1.12;margin-bottom:12px;position:relative}
+.fin-t span{color:var(--laranja2)}
+.fin-sub{color:rgba(255,255,255,.55);font-size:.95rem;margin-bottom:34px;position:relative}
+.selos{display:flex;flex-wrap:wrap;justify-content:center;gap:16px;margin-top:22px;font-size:.75rem;color:rgba(255,255,255,.38);text-transform:uppercase;font-weight:700;letter-spacing:.04em}
+.selos span{display:flex;align-items:center;gap:5px}
+
+/* POPUP */
+.popup-ov{position:fixed;inset:0;z-index:9999;background:rgba(0,0,0,.88);backdrop-filter:blur(6px);display:flex;align-items:center;justify-content:center;padding:16px;opacity:0;pointer-events:none;transition:opacity .3s ease}
+.popup-ov.on{opacity:1;pointer-events:all}
+.popup-box{background:#111;border:2px solid var(--laranja);border-radius:20px;max-width:540px;width:100%;max-height:92vh;overflow-y:auto;box-shadow:0 0 80px rgba(255,106,0,.35);transform:scale(.92);transition:transform .3s ease}
+.popup-ov.on .popup-box{transform:scale(1)}
+.popup-top{background:var(--lgrad);padding:12px 20px;border-radius:16px 16px 0 0;text-align:center}
+.popup-alerta{font-weight:800;font-size:.82rem;color:#fff;letter-spacing:.08em;text-transform:uppercase;animation:pisca 1.2s ease infinite;display:inline-block}
+.popup-body{padding:28px 28px 32px;display:flex;flex-direction:column;gap:16px}
+.popup-eyebrow{font-weight:800;font-size:.88rem;color:rgba(255,255,255,.5);text-transform:uppercase;letter-spacing:.08em}
+.popup-titulo{font-size:clamp(1.6rem,4vw,2.1rem);font-weight:800;color:#fff;line-height:1.15}
+.popup-titulo span{color:var(--laranja2)}
+.popup-sub{font-size:.93rem;color:rgba(255,255,255,.7);line-height:1.6}
+.popup-sub strong{color:#fff}
+.popup-itens{list-style:none;background:#1a1a1a;border-radius:12px;padding:16px 18px;display:flex;flex-direction:column;gap:9px;border:1px solid rgba(255,255,255,.08)}
+.popup-itens li{font-size:.88rem;color:rgba(255,255,255,.8);line-height:1.4}
+.popup-itens li strong{color:#fff}
+.popup-preco-wrap{background:linear-gradient(135deg,#1a0a00,#2a1000);border:1.5px solid rgba(255,106,0,.4);border-radius:12px;padding:18px 20px;text-align:center}
+.popup-preco-de{font-size:.82rem;color:rgba(255,255,255,.5);margin-bottom:4px}
+.popup-preco{font-size:3rem;font-weight:800;color:var(--laranja);line-height:1;margin-bottom:6px}
+.popup-preco-eco{font-size:.8rem;color:rgba(255,255,255,.55);line-height:1.4}
+.popup-preco-eco strong{color:var(--laranja2)}
+.popup-timer{display:flex;align-items:center;gap:10px;background:rgba(255,200,0,.08);border:1px solid rgba(255,200,0,.2);border-radius:8px;padding:10px 14px;font-size:.82rem;color:#ffc800;font-weight:700;line-height:1.4}
+.popup-btn-sim{background:var(--lgrad);color:#fff;padding:18px 24px;font-size:1.05rem;font-weight:800;border-radius:10px;text-align:center;display:block;width:100%;border:none;cursor:pointer;box-shadow:0 8px 32px rgba(255,106,0,.5);animation:pulsoBtn 2s ease infinite;transition:filter .2s,transform .2s;text-decoration:none}
+.popup-btn-sim:hover{filter:brightness(1.1);transform:translateY(-2px);text-decoration:none}
+.popup-btn-nao{background:transparent;border:none;cursor:pointer;font-family:inherit;font-size:.8rem;color:rgba(255,255,255,.3);text-decoration:underline;text-underline-offset:3px;padding:4px;width:100%;text-align:center;transition:color .2s;line-height:1.5}
+.popup-btn-nao:hover{color:rgba(255,255,255,.55)}
+@media(max-width:480px){.popup-body{padding:20px 18px 24px}.popup-preco{font-size:2.4rem}}
+
+/* FOOTER */
+footer{background:#080808;padding:32px 20px;text-align:center;border-top:1px solid rgba(255,106,0,.15)}
+.footer-in{display:flex;flex-direction:column;align-items:center;gap:14px}
+.footer-logo{height:80px;width:auto;object-fit:contain;mix-blend-mode:lighten;opacity:.85}
+footer p{font-size:.76rem;color:#444;line-height:2.2}
+footer a{color:#666}
+footer a:hover{color:var(--laranja2)}
+
+@media(max-width:480px){.hero h1{font-size:1.9rem}.p-preco{font-size:2.6rem}}
+
+/* SOCIAL PROOF HERO */
+.hero-social-proof{display:flex;align-items:center;gap:12px;justify-content:center;margin-bottom:18px;animation:entrar .7s ease both}
+.hsp-avatares{display:flex}
+.hsp-avatares img{width:34px;height:34px;border-radius:50%;border:2px solid var(--laranja);object-fit:cover;margin-left:-10px}
+.hsp-avatares img:first-child{margin-left:0}
+.hsp-texto{font-size:.8rem;color:rgba(255,255,255,.8);line-height:1.35;text-align:left}
+.hsp-texto strong{color:#fff}
+.hero-urgencia{margin-top:12px;font-size:.82rem;font-weight:700;color:#ffcc00;letter-spacing:.02em;animation:pisca 2.5s ease infinite}
+
+
+@keyframes notif-in{from{opacity:0;transform:translateX(-110%)}to{opacity:1;transform:translateX(0)}}
+@keyframes notif-out{from{opacity:1;transform:translateX(0)}to{opacity:0;transform:translateX(-110%)}}
+.notif-wrap{position:fixed;bottom:24px;left:20px;z-index:9998;display:flex;flex-direction:column;gap:10px;pointer-events:none}
+.notif{background:#fff;border-radius:14px;padding:12px 16px;display:flex;align-items:center;gap:12px;box-shadow:0 8px 32px rgba(0,0,0,.18);border-left:4px solid var(--laranja);max-width:300px;pointer-events:all;animation:notif-in .5s cubic-bezier(.4,0,.2,1) both}
+.notif.saindo{animation:notif-out .5s cubic-bezier(.4,0,.2,1) both}
+.notif-av{width:42px;height:42px;border-radius:50%;object-fit:cover;flex-shrink:0;border:2px solid var(--laranja)}
+.notif-corpo{display:flex;flex-direction:column;gap:2px;flex:1;min-width:0}
+.notif-nome{font-weight:800;font-size:.84rem;color:#111;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.notif-msg{font-size:.76rem;color:#555;line-height:1.35}
+.notif-tempo{font-size:.68rem;color:var(--laranja);font-weight:700;margin-top:2px;display:flex;align-items:center;gap:4px}
+.notif-tempo::before{content:'🟢';font-size:.55rem}
+@media(max-width:480px){.notif{max-width:260px}.notif-av{width:36px;height:36px}}
+</style>
+</head>
+<body>
+
+<div class="alerta">🚨 Oferta por tempo limitado — garanta seu acesso agora!</div>
+
+<!-- 1. HEADLINE + VÍDEO + SUBHEADLINE (HERO) -->
+<section class="hero">
+  <div class="hero-bg"></div>
+  <div class="hero-dots"></div>
+  <div class="hero-in">
+    <img src="https://i.ibb.co/PZt70b6L/png-logo-site.png" alt="Casa Pronta 200" class="hero-logo" fetchpriority="high" loading="eager">
+    <!-- PROVA SOCIAL IMEDIATA -->
+    <div class="hero-social-proof">
+      <div class="hsp-avatares">
+        <img src="https://i.pinimg.com/736x/f7/3b/99/f73b9906d356f0ea7f4056fdb847e5f4.jpg" alt="">
+        <img src="https://i.pinimg.com/1200x/07/45/49/074549f2a5ac2f21a4b3cc6f138a3d97.jpg" alt="">
+        <img src="https://i.pinimg.com/736x/48/34/2d/48342d87dad03cffa1476fe393dfebab.jpg" alt="">
+        <img src="https://i.pinimg.com/1200x/f7/70/c7/f770c7c8d3041bade2bf9e96efb974a8.jpg" alt="">
+      </div>
+      <div class="hsp-texto"><strong>+2.400 pessoas</strong> já construíram com nossos projetos ⭐⭐⭐⭐⭐</div>
+    </div>
+
+    <div class="hero-pill"><em>+50 PROJETOS</em> Casas Populares &amp; Modernas</div>
+
+    <!-- HEADLINE -->
+    <h1>Pare de pagar aluguel.<br><span>Comece sua obra hoje</span> com projeto completo por R$10.</h1>
+
+    <!-- VÍDEO DE VENDAS / MOCKUP -->
+    <div class="video-wrap">
+      <script src="https://fast.wistia.com/embed/medias/vo4bx0q0vz.jsonp" async></script>
+      <script src="https://fast.wistia.com/assets/external/E-v1.js" async></script>
+      <div class="wistia_responsive_padding" style="padding:177.78% 0 0 0;position:relative;">
+        <div class="wistia_responsive_wrapper" style="height:100%;left:0;position:absolute;top:0;width:100%;">
+          <div class="wistia_embed wistia_async_vo4bx0q0vz videoFoam=true" style="height:100%;position:relative;width:100%">
+            <div class="wistia_swatch" style="height:100%;left:0;opacity:0;overflow:hidden;position:absolute;top:0;transition:opacity 200ms;width:100%;">
+              <img src="https://fast.wistia.com/embed/medias/vo4bx0q0vz/swatch" style="filter:blur(5px);height:100%;object-fit:contain;width:100%;" alt="" aria-hidden="true" onload="this.parentNode.style.opacity=1;" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- SUBHEADLINE -->
+    <p class="hero-sub">Mesmo que você <b>nunca tenha feito uma obra</b> — plantas, materiais e passo a passo prontos para construir sem erro e sem desperdício.</p>
+
+    <div class="hero-cta">
+      <a href="#planos" class="btn btn-am" style="font-size:1.22rem;padding:22px 56px">🏠 QUERO meu projeto agora →</a>
+      <small class="lock">🔒 Pagamento seguro · Acesso imediato · Garantia de 7 dias</small>
+      <!-- URGÊNCIA -->
+      <div class="hero-urgencia">🔥 <span id="contadorCompras">37</span> pessoas compraram nas últimas 3 horas</div>
+    </div>
+  </div>
+</section>
+
+<!-- STRIP -->
+<div class="strip">
+  <div class="strip-in">
+    <span class="s-item">+50 Projetos Prontos</span><span class="s-item">Arq. + Elétrica + Hidráulica</span><span class="s-item">Lista de Materiais</span><span class="s-item">Acesso Vitalício</span><span class="s-item">Renderizações 3D</span><span class="s-item">PDF para o Pedreiro</span><span class="s-item">Garantia de 7 Dias</span><span class="s-item">+50 Projetos Prontos</span><span class="s-item">Arq. + Elétrica + Hidráulica</span><span class="s-item">Lista de Materiais</span><span class="s-item">Acesso Vitalício</span><span class="s-item">Renderizações 3D</span><span class="s-item">PDF para o Pedreiro</span><span class="s-item">Garantia de 7 Dias</span>
+  </div>
+</div>
+
+<!-- 2. O QUE VOCÊ VAI RECEBER -->
+<section class="sec sec-abas" id="recebe">
+  <div class="w">
+    <div class="tc" style="margin-bottom:36px">
+      <span class="tag">📦 O que você recebe</span>
+      <h2 class="t">Tudo para construir com <span>segurança total</span></h2>
+      <p class="sub" style="margin-bottom:0">Do projeto ao acabamento — sem contratar nada separado</p>
+    </div>
+    <div class="r-grid">
+      <div class="rc"><span class="rc-ico">🏗️</span><h3>+50 Projetos Completos</h3><p>Arquitetônico, elétrico e hidráulico em um só lugar. Zero contratações extras.</p></div>
+      <div class="rc"><span class="rc-ico">📋</span><h3>Lista de Materiais</h3><p>Por projeto e por etapa. Compra certo, sem sobrar e sem faltar nada.</p></div>
+      <div class="rc"><span class="rc-ico">💰</span><h3>Simulador de Custos</h3><p>Cálculo automático por região. Sabe exatamente quanto vai gastar antes de começar.</p></div>
+      <div class="rc"><span class="rc-ico">🖼️</span><h3>Renderizações 3D</h3><p>Veja como ficará a casa antes de construir uma parede sequer.</p></div>
+      <div class="rc"><span class="rc-ico">📱</span><h3>PDF para o Pedreiro</h3><p>Versão simplificada que qualquer profissional consegue executar.</p></div>
+    </div>
+
+    <!-- CARROSSEL DE PROJETOS -->
+    <div style="margin-top:44px">
+      <p class="tc" style="font-weight:800;font-size:1rem;color:var(--texto);margin-bottom:20px">👀 Veja alguns dos projetos que você vai receber</p>
+      <div class="carr-wrap">
+        <div class="carr-outer">
+          <div class="carr-track" id="cTrack">
+            <div class="carr-slide"><img class="simg" src="https://i.pinimg.com/736x/bc/ba/cb/bcbacb206cf12d91e6e802d25c9e3961.jpg" alt="Casa 1" loading="lazy"><div class="carr-label">Casa Térrea 42m²</div></div>
+            <div class="carr-slide"><img class="simg" src="https://i.pinimg.com/1200x/24/12/8c/24128c449558c6c2bbeb81417ba654bf.jpg" alt="Casa 2" loading="lazy"><div class="carr-label">Casa Moderna 60m²</div></div>
+            <div class="carr-slide"><img class="simg" src="https://i.pinimg.com/1200x/16/8c/c8/168cc8a894d4160596c05fa577f76e34.jpg" alt="Casa 3" loading="lazy"><div class="carr-label">Casa Popular 55m²</div></div>
+            <div class="carr-slide"><img class="simg" src="https://i.pinimg.com/736x/5e/99/bc/5e99bc763a0201f334ce4365a73aea2e.jpg" alt="Casa 4" loading="lazy"><div class="carr-label">Sobrado 90m²</div></div>
+            <div class="carr-slide"><img class="simg" src="https://i.pinimg.com/736x/83/f2/e1/83f2e1ebf5f1256ea6bb70be5c9a3e01.jpg" alt="Casa 5" loading="lazy"><div class="carr-label">Casa 3 Quartos 75m²</div></div>
+            <div class="carr-slide"><img class="simg" src="https://i.pinimg.com/736x/a5/25/aa/a525aa9a4f3c4dc0267589f767b2c017.jpg" alt="Casa 6" loading="lazy"><div class="carr-label">Casa Compacta 48m²</div></div>
+            <div class="carr-slide"><img class="simg" src="https://i.pinimg.com/736x/8e/06/2c/8e062c92365b34f947b8d0ff946af5e8.jpg" alt="Casa 7" loading="lazy"><div class="carr-label">Casa Ampla 110m²</div></div>
+          </div>
+        </div>
+        <button class="carr-btn carr-prev" id="cPrev">&#8592;</button>
+        <button class="carr-btn carr-next" id="cNext">&#8594;</button>
+        <div class="carr-dots" id="cDots"></div>
+      </div>
+    </div>
+
+    <div class="tc" style="margin-top:40px">
+      <a href="#planos" class="btn btn-am" style="font-size:1.05rem;padding:17px 44px">QUERO construir do jeito certo →</a>
+    </div>
+  </div>
+</section>
+
+<!-- 3. BÔNUS EXCLUSIVOS -->
+<section class="sec sec-bv">
+  <div class="w">
+    <div class="tc" style="margin-bottom:44px">
+      <span class="tag">🎁 Bônus exclusivos</span>
+      <h2 class="t">Você também recebe <span>tudo isso</span></h2>
+      <p class="sub" style="margin-bottom:0">Incluídos gratuitamente no Mega Pack</p>
+    </div>
+    <div class="bv-grid">
+      <div class="bv-card"><img src="https://i.ibb.co/HDjJXWJf/bonus-1.png" alt="Bônus 1" class="bv-img"><div class="bv-body"><span class="bv-tag">Bônus 1</span><h3>Renderizações 3D de Todos os Projetos</h3><p>Visualize cada detalhe da sua casa antes de construir uma única parede. Tome decisões com segurança.</p></div></div>
+      <div class="bv-card"><img src="https://i.ibb.co/LD2brLYV/bonus-2.png" alt="Bônus 2" class="bv-img"><div class="bv-body"><span class="bv-tag">Bônus 2</span><h3>Planilha PRO de Custos + Cronograma</h3><p>Calcule o custo total da obra por etapa com um clique. Sem surpresas no orçamento.</p></div></div>
+      <div class="bv-card"><img src="https://i.ibb.co/bR3Ys5BL/bonus-3.png" alt="Bônus 3" class="bv-img"><div class="bv-body"><span class="bv-tag">Bônus 3</span><h3>Guia Prático de Construção</h3><p>O passo a passo completo para quem nunca construiu antes. Do alicerce ao acabamento.</p></div></div>
+    </div>
+    <div class="bv-mais"><span>🎁</span><p>E muito mais bônus incluídos no Mega Pack</p><a href="#planos" class="btn btn-la">Ver todos os bônus →</a></div>
+  </div>
+</section>
+
+<!-- 4. ESCOLHA SEU PLANO -->
+<section class="sec sec-planos" id="planos">
+  <div class="w">
+    <div class="tc" style="margin-bottom:40px">
+      <span class="tag">💳 Escolha seu plano</span>
+      <h2 class="t">Acesso imediato após o <span>pagamento</span></h2>
+      <p class="sub" style="margin-bottom:0">Garantia de 7 dias · Acesso vitalício · 100% seguro</p>
+    </div>
+    <div class="planos">
+
+      <!-- BÁSICO -->
+      <div class="plano bas">
+        <div class="p-head">
+          <div class="p-nome">Plano Básico</div>
+          <div class="p-de">De R$97,00</div>
+          <div class="p-preco">R$10</div>
+          <div class="p-parc">pagamento único</div>
+        </div>
+        <ul class="p-itens">
+          <li>✅ <div><b>50 Projetos Completos</b><br>Arq. + Elétrica + Hidráulica</div></li>
+          <li>✅ Lista de materiais</li>
+          <li>✅ Acesso vitalício</li>
+          <li>✅ 7 dias de garantia</li>
+        </ul>
+        <div class="p-foot">
+          <a href="#" onclick="abrirPopup(event)" class="btn btn-gz btn-w">QUERO o Plano Básico →</a>
+          <div class="p-seg">🔒 Pagamento seguro · Acesso imediato</div>
+        </div>
+      </div>
+
+      <!-- MEGA PACK -->
+      <div class="plano dest">
+        <div class="p-top">⭐ MAIS COMPLETO — MELHOR CUSTO</div>
+        <div class="p-head">
+          <div class="p-nome" style="color:var(--laranja)">Mega Pack</div>
+          <div class="p-de">De R$297,00</div>
+          <div class="p-preco">R$27,90</div>
+          <div class="p-parc">ou 6x de R$5,28</div>
+        </div>
+        <ul class="p-itens">
+          <li class="p-lbl">📦 TUDO O QUE VOCÊ VAI RECEBER:</li>
+          <li>✅ <div class="li-row"><span><b>100+ Projetos Completos</b><br><small>Arquitetônico + Elétrica + Hidráulica</small></span><span class="li-preco">R$297</span></div></li>
+          <li>✅ <div class="li-row"><span>Renderizações 3D de todos os projetos</span><span class="li-preco">R$60</span></div></li>
+          <li>✅ <div class="li-row"><span>Lista completa de materiais por projeto</span><span class="li-preco">R$28</span></div></li>
+          <li>✅ <div class="li-row"><span>Planilha PRO de Custos + Cronograma</span><span class="li-preco">R$97</span></div></li>
+          <li>✅ <div class="li-row"><span>PDFs Otimizados "Modo Obra"</span><span class="li-preco">R$20</span></div></li>
+          <li>✅ <div class="li-row"><span>Guia Prático de Construção</span><span class="li-preco">R$15</span></div></li>
+          <li class="p-div"></li>
+          <li class="bon">🎁 <div class="li-row"><span><b>BÔNUS 1</b> — Checklist Aprovação Prefeituras</span><span class="li-preco bon-p">R$97</span></div></li>
+          <li class="bon">🎁 <div class="li-row"><span><b>BÔNUS 2</b> — Planilha Automática de Orçamento</span><span class="li-preco bon-p">R$67</span></div></li>
+          <li class="bon">🎁 <div class="li-row"><span><b>BÔNUS 3</b> — Guia 15 Erros Caros em Obras</span><span class="li-preco bon-p">R$47</span></div></li>
+          <li class="bon">🎁 <div class="li-row"><span><b>BÔNUS 4</b> — Cronograma Realista de Obra</span><span class="li-preco bon-p">R$67</span></div></li>
+          <li class="bon">🎁 <div class="li-row"><span><b>BÔNUS 5</b> — PDF Modo Obra Simplificado</span><span class="li-preco bon-p">R$28</span></div></li>
+          <li class="p-div"></li>
+          <li class="p-total"><span>Valor total:</span><span><s>R$726</s></span></li>
+          <li class="p-hoje"><span>Hoje por apenas:</span><span class="p-hoje-val">R$27,90</span></li>
+        </ul>
+        <div class="p-foot">
+          <a href="https://www.ggcheckout.com/checkout/v5/aYoNIDmKDOq6J2noAgan" target="_blank" class="btn btn-la btn-w">🏠 QUERO o Mega Pack agora →</a>
+          <div class="p-seg">🔒 Pagamento seguro · Acesso imediato</div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- 5. DEPOIMENTOS 2026 -->
+<section class="sec sec-dep">
+  <div class="w">
+    <div class="tc" style="margin-bottom:40px">
+      <span class="tag" style="background:rgba(255,255,255,.1);color:#fff;border-color:rgba(255,255,255,.15)">⭐ Depoimentos</span>
+      <h2 class="t" style="color:#fff">Quem já comprou e <span>está construindo em 2026</span></h2>
+    </div>
+    <div class="dep-grid">
+      <div class="dep-card"><div class="dep-stars">★★★★★</div><p class="dep-texto">"Nunca pensei que ia conseguir tirar a planta da casa sozinho. Escolhi o modelo, mostrei pro pedreiro e ele entendeu na hora. Obra começou em 2 semanas!"</p><div class="dep-autor"><img class="dep-av" src="https://i.pinimg.com/736x/f7/3b/99/f73b9906d356f0ea7f4056fdb847e5f4.jpg" alt="Marcos"><div><strong>Marcos Rodrigues</strong><span>Goiânia, GO</span></div></div></div>
+      <div class="dep-card"><div class="dep-stars">★★★★★</div><p class="dep-texto">"Economizei mais de R$3.000 só com a lista de materiais. O simulador de custos me mostrou onde eu ia desperdiçar e ajustei antes de comprar qualquer coisa."</p><div class="dep-autor"><img class="dep-av" src="https://i.pinimg.com/1200x/f7/70/c7/f770c7c8d3041bade2bf9e96efb974a8.jpg" alt="Rafael"><div><strong>Rafael Mendes</strong><span>Fortaleza, CE</span></div></div></div>
+      <div class="dep-card"><div class="dep-stars">★★★★★</div><p class="dep-texto">"Terreno parado há 3 anos sem saber por onde começar. Comprei o pacote, escolhi o projeto de 60m² e agora minha casa está no reboco!"</p><div class="dep-autor"><img class="dep-av" src="https://i.pinimg.com/1200x/07/45/49/074549f2a5ac2f21a4b3cc6f138a3d97.jpg" alt="João"><div><strong>João Ferreira</strong><span>Campinas, SP</span></div></div></div>
+      <div class="dep-card"><div class="dep-stars">★★★★★</div><p class="dep-texto">"Comprei pra construir e alugar. O projeto foi aprovado na prefeitura sem nenhuma correção. Valeu muito mais do que paguei, recomendo pra todo mundo."</p><div class="dep-autor"><img class="dep-av" src="https://i.pinimg.com/736x/d6/8c/af/d68cafbfb394a59d594b223d85ad0871.jpg" alt="Patricia"><div><strong>Patricia Santos</strong><span>Belo Horizonte, MG</span></div></div></div>
+      <div class="dep-card"><div class="dep-stars">★★★★★</div><p class="dep-texto">"O PDF do modo obra é incrível. Meu pedreiro não sabe ler planta técnica mas com esse PDF simplificado ele executou tudo certinho. Recomendo demais!"</p><div class="dep-autor"><img class="dep-av" src="https://i.pinimg.com/736x/48/34/2d/48342d87dad03cffa1476fe393dfebab.jpg" alt="Fernanda"><div><strong>Fernanda Lima</strong><span>Salvador, BA</span></div></div></div>
+      <div class="dep-card"><div class="dep-stars">★★★★★</div><p class="dep-texto">"Já tinha pesquisado arquiteto e o orçamento era R$4.500 só pra fazer o projeto. Por R$27,90 recebi 100 projetos com tudo incluído. Melhor decisão que tomei."</p><div class="dep-autor"><img class="dep-av" src="https://i.pinimg.com/736x/a3/02/9b/a3029bb3f39430f136e752d80bdb958e.jpg" alt="Claudia"><div><strong>Claudia Fonseca</strong><span>Curitiba, PR</span></div></div></div>
+    </div>
+  </div>
+</section>
+
+<!-- GARANTIA -->
+<section class="sec-gar">
+  <div class="gar-box">
+    <span class="gar-ico"><img src="https://i.ibb.co/V0j7kC4t/10002431-1.png" alt="Garantia" class="gar-img"></span>
+    <div class="gar-titulo">Garantia de 7 Dias</div>
+    <p class="gar-txt">Teste por 7 dias. Se não ficar satisfeito por qualquer motivo, devolvemos <b>100% do seu dinheiro</b> — sem perguntas, sem enrolação.</p>
+  </div>
+</section>
+
+<!-- ESCASSEZ -->
+<div class="esc"><p>⏳ Acesso promocional por tempo limitado — não perca esta condição</p></div>
+
+<!-- FAQ -->
+<section class="sec sec-faq">
+  <div class="w">
+    <div class="tc" style="margin-bottom:32px">
+      <span class="tag">❓ Dúvidas</span>
+      <h2 class="t">Perguntas <span>frequentes</span></h2>
+    </div>
+    <div class="faq-lista">
+      <div class="fi"><div class="fq" onclick="faq(this)">Preciso ter experiência em obras? <span class="s">+</span></div><div class="fa">Não. O PDF Modo Obra foi feito para o pedreiro executar corretamente sem você ter conhecimento técnico.</div></div>
+      <div class="fi"><div class="fq" onclick="faq(this)">Funciona em todo o Brasil? <span class="s">+</span></div><div class="fa">Sim. O simulador é ajustado por região e os projetos seguem normas ABNT para qualquer prefeitura.</div></div>
+      <div class="fi"><div class="fq" onclick="faq(this)">Como recebo após a compra? <span class="s">+</span></div><div class="fa">Imediatamente após o pagamento enviamos tudo para o seu e-mail. Acesso vitalício.</div></div>
+      <div class="fi"><div class="fq" onclick="faq(this)">E se eu não gostar? <span class="s">+</span></div><div class="fa">7 dias de garantia total. Devolvemos 100% do valor sem questionamentos.</div></div>
+    </div>
+  </div>
+</section>
+
+<!-- CTA FINAL -->
+<section class="sec-fin">
+  <div class="w tc">
+    <h2 class="fin-t">Pare de pagar aluguel.<br>Comece agora por <span>R$10</span>.</h2>
+    <p class="fin-sub">Mega Pack completo por R$27,90 · Acesso imediato</p>
+    <a href="#planos" class="btn btn-am" style="font-size:1.15rem;padding:20px 56px">👉 QUERO meu plano agora</a>
+    <div class="selos">
+      <span>🔒 Seguro</span><span>⚡ Imediato</span><span>🛡️ 7 dias garantia</span><span>♾️ Vitalício</span>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="footer-in">
+    <img src="https://i.ibb.co/PZt70b6L/png-logo-site.png" alt="Casa Pronta 200" class="footer-logo">
+    <p>2025 — Todos os direitos reservados.<br><a href="#">Política de Privacidade</a> · <a href="#">Termos de Uso</a></p>
+  </div>
+</footer>
+
+<!-- POPUP UPSELL -->
+<div class="popup-ov" id="popupOv">
+  <div class="popup-box">
+    <div class="popup-top"><span class="popup-alerta">⚠️ OFERTA ÚNICA — APARECE APENAS UMA VEZ</span></div>
+    <div class="popup-body">
+      <div class="popup-eyebrow">Espera! Antes de continuar...</div>
+      <h2 class="popup-titulo">Oferta <span>exclusiva para você</span></h2>
+      <p class="popup-sub">Você estava indo embora com os <strong>50 projetos por R$10</strong>... mas temos uma proposta que aparece <strong>uma única vez:</strong></p>
+      <ul class="popup-itens">
+        <li>✅ <strong>100+ projetos</strong> completos (arq. + elétrica + hidráulica)</li>
+        <li>✅ Renderizações 3D de todos os projetos</li>
+        <li>✅ Lista de materiais + Simulador de custos</li>
+        <li>✅ Planilha PRO de Custos + Cronograma</li>
+        <li>✅ PDF Modo Obra para o pedreiro</li>
+        <li>🎁 Checklist aprovação em prefeitura</li>
+        <li>🎁 Planilha automática de orçamento</li>
+        <li>🎁 Guia 15 erros caros em obras + outros bônus</li>
+      </ul>
+      <div class="popup-preco-wrap">
+        <div class="popup-preco-de">Normalmente R$27,90 — só agora por</div>
+        <div class="popup-preco">R$17,90</div>
+        <div class="popup-preco-eco">Você economiza <strong>R$10,00</strong> nesta oferta exclusiva que aparece uma única vez</div>
+      </div>
+      <div class="popup-timer"><span>⏱️</span><span>Esta oferta some quando você fechar ou sair desta página</span></div>
+      <a href="https://www.ggcheckout.com/checkout/v5/55zSfD0lAgPCDoAL2Wy8" target="_blank" class="popup-btn-sim" onclick="fecharPopup()">🔥 SIM! QUERO o Mega Pack por R$17,90</a>
+      <button class="popup-btn-nao" onclick="recusarOferta()">Não, QUERO continuar apenas com os 50 projetos por R$10,00</button>
+    </div>
+  </div>
+</div>
+
+<script>
+// POPUP
+var popupVisto = false;
+function abrirPopup(e){
+  e.preventDefault();
+  if(popupVisto){ window.open('https://www.ggcheckout.com/checkout/v5/yjQNiJAlhKXUOxDvTfcC','_blank'); return; }
+  popupVisto = true;
+  document.getElementById('popupOv').classList.add('on');
+  document.body.style.overflow = 'hidden';
+  document.addEventListener('visibilitychange', function h(){ if(document.hidden){ fecharPopup(); document.removeEventListener('visibilitychange',h); } });
+}
+function fecharPopup(){ document.getElementById('popupOv').classList.remove('on'); document.body.style.overflow=''; }
+function recusarOferta(){ fecharPopup(); window.open('https://www.ggcheckout.com/checkout/v5/yjQNiJAlhKXUOxDvTfcC','_blank'); }
+document.getElementById('popupOv').addEventListener('click', function(e){ if(e.target===this) recusarOferta(); });
+
+// FAQ
+function faq(el){
+  const a=el.nextElementSibling, o=el.classList.contains('on');
+  document.querySelectorAll('.fq.on').forEach(q=>{ q.classList.remove('on'); q.nextElementSibling.classList.remove('v'); });
+  if(!o){ el.classList.add('on'); a.classList.add('v'); }
+}
+
+// CARROSSEL
+var carrOk = false;
+function initCarr(){
+  if(carrOk) return;
+  var track=document.getElementById('cTrack');
+  var dotsW=document.getElementById('cDots');
+  if(!track||!dotsW) return;
+  carrOk = true;
+  var slides=track.querySelectorAll('.carr-slide');
+  var total=slides.length, cur=0, timer;
+  function pv(){ var w=window.innerWidth; if(w<=480)return 1; if(w<=700)return 1.5; return 3; }
+  slides.forEach(function(_,i){ var d=document.createElement('button'); d.className='carr-dot'+(i===0?' on':''); d.onclick=function(){go(i);}; dotsW.appendChild(d); });
+  function updDots(){ dotsW.querySelectorAll('.carr-dot').forEach(function(d,i){ d.classList.toggle('on',i===cur); }); }
+  function go(idx){ var max=total-Math.floor(pv()); cur=Math.max(0,Math.min(idx,max)); track.style.transform='translateX(-'+(cur*(track.parentElement.offsetWidth/pv()))+'px)'; updDots(); }
+  document.getElementById('cPrev').onclick=function(){ go(cur-1); rst(); };
+  document.getElementById('cNext').onclick=function(){ go(cur+1>total-Math.floor(pv())?0:cur+1); rst(); };
+  var sx=0;
+  track.addEventListener('touchstart',function(e){ sx=e.touches[0].clientX; },{passive:true});
+  track.addEventListener('touchend',function(e){ var d=sx-e.changedTouches[0].clientX; if(Math.abs(d)>40){ d>0?go(cur+1):go(cur-1); rst(); } });
+  function start(){ timer=setInterval(function(){ go(cur+1>total-Math.floor(pv())?0:cur+1); },3400); }
+  function rst(){ clearInterval(timer); start(); }
+  start();
+  window.addEventListener('resize',function(){ go(cur); });
+}
+initCarr();
+
+// SMOOTH SCROLL
+document.querySelectorAll('a[href^="#"]').forEach(function(a){
+  a.addEventListener('click',function(e){
+    var t=document.querySelector(a.getAttribute('href'));
+    if(t){ e.preventDefault(); t.scrollIntoView({behavior:'smooth'}); }
+  });
+});
+</script>
+<!-- NOTIFICAÇÕES SOCIAL PROOF -->
+<div class="notif-wrap" id="notifWrap"></div>
+
+<script>
+// CONTADOR DE COMPRAS (sobe 1 a cada ~40s para parecer real)
+var baseCount = 37;
+var el = document.getElementById('contadorCompras');
+if(el){
+  setInterval(function(){
+    baseCount++;
+    el.textContent = baseCount;
+  }, 40000);
+}
+
+
+var compradores = [
+  {nome:"Gabriel Silva",    msg:"acabou de comprar a oferta premium",  tempo:"agora mesmo",     av:"https://i.pinimg.com/736x/f7/3b/99/f73b9906d356f0ea7f4056fdb847e5f4.jpg"},
+  {nome:"Marcos Oliveira",  msg:"garantiu o Mega Pack",                tempo:"há 2 minutos",    av:"https://i.pinimg.com/1200x/07/45/49/074549f2a5ac2f21a4b3cc6f138a3d97.jpg"},
+  {nome:"Ana Paula Souza",  msg:"acabou de comprar o Plano Básico",    tempo:"há 4 minutos",    av:"https://i.pinimg.com/736x/48/34/2d/48342d87dad03cffa1476fe393dfebab.jpg"},
+  {nome:"Diego Ferreira",   msg:"garantiu acesso ao Mega Pack",        tempo:"há 6 minutos",    av:"https://i.pinimg.com/1200x/f7/70/c7/f770c7c8d3041bade2bf9e96efb974a8.jpg"},
+  {nome:"Juliana Costa",    msg:"acabou de comprar a oferta premium",  tempo:"há 8 minutos",    av:"https://i.pinimg.com/736x/a3/02/9b/a3029bb3f39430f136e752d80bdb958e.jpg"},
+  {nome:"Ricardo Alves",    msg:"garantiu o Mega Pack agora",          tempo:"há 10 minutos",   av:"https://i.pinimg.com/736x/83/f2/e1/83f2e1ebf5f1256ea6bb70be5c9a3e01.jpg"},
+  {nome:"Fernanda Lima",    msg:"acabou de comprar o Plano Básico",    tempo:"há 12 minutos",   av:"https://i.pinimg.com/736x/d6/8c/af/d68cafbfb394a59d594b223d85ad0871.jpg"},
+  {nome:"Carlos Eduardo",   msg:"garantiu acesso à oferta premium",    tempo:"há 14 minutos",   av:"https://i.pinimg.com/736x/5e/99/bc/5e99bc763a0201f334ce4365a73aea2e.jpg"},
+  {nome:"Patrícia Nunes",   msg:"acabou de comprar o Mega Pack",       tempo:"há 16 minutos",   av:"https://i.pinimg.com/736x/a5/25/aa/a525aa9a4f3c4dc0267589f767b2c017.jpg"},
+  {nome:"Thiago Mendes",    msg:"garantiu o Plano Básico agora",       tempo:"há 18 minutos",   av:"https://i.pinimg.com/736x/8e/06/2c/8e062c92365b34f947b8d0ff946af5e8.jpg"},
+];
+var notifIdx = 0;
+function mostrarNotif(){
+  var d = compradores[notifIdx % compradores.length];
+  notifIdx++;
+  var wrap = document.getElementById('notifWrap');
+  var el = document.createElement('div');
+  el.className = 'notif';
+  el.innerHTML = '<div class="notif-corpo">'
+    +'<span class="notif-nome">'+d.nome+'</span>'
+    +'<span class="notif-msg">'+d.msg+'</span>'
+    +'<span class="notif-tempo">'+d.tempo+'</span>'
+    +'</div>';
+  wrap.appendChild(el);
+  setTimeout(function(){
+    el.classList.add('saindo');
+    setTimeout(function(){ if(el.parentNode) el.parentNode.removeChild(el); }, 500);
+  }, 4500);
+}
+// Primeira aparece após 3s, depois a cada 7s
+setTimeout(function(){
+  mostrarNotif();
+  setInterval(mostrarNotif, 7000);
+}, 3000);
+</script>
+
+</body>
+</html>
